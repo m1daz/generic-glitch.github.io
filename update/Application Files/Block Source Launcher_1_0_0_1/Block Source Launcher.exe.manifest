@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Block Source Launcher.exe" version="1.0.0.1" publicKeyToken="e4e3e106a4bbdfe6" language="neutral" processorArchitecture="msil" type="win32" />
+  <description asmv2:iconFile="icon.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Block Source Launcher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Block Source Launcher.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Block Source Launcher.exe" size="1419848">
+      <assemblyIdentity name="Block Source Launcher" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BlhnYWgDrZWwd9u9F1/FrYaNKMKzVOsPXAlnrs0vhOA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Block Source Launcher.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="icon.ico" size="432254">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>B0eXmRLusVZOBrVSkc+0dxpic7dW+SXZx4AwjnzbHwA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN={8786CC0F-B53D-48E2-9388-C00CB0E8D486}" issuerKeyHash="84a630469e6e4c02433c9a745f5074f8a71212ae" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>yi1wi38Za/ozPmj+JBpW3GTba9b+lAbwXM/m/9tRjmM=</DigestValue></Reference></SignedInfo><SignatureValue>Q8IzTxSUi+G/q+7/Ka6AFtSbhxuUTSlj8BG6HPCeDj/EwxLE1+tHQ1mFy5wtsaKDptNAcMm4/Lg7BSgOCL0/dIRIhbKUKnhGcrjyQeQWuduyT+xRDFcKQRDwTwmQYBYWu7jJfp9WeoSaM7+OM5DfXq1AHXJgPJcHycEto3XF7E4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>4wpCu+bQk6WDFcF4B2+TYbjYToW+bqckKfhdMu1WsEbzM9Hi5JxJcq1lOJALoRCHX0x8sgqcFfTjj3HcEwl12uqgoCAFh5vZMxISlit5xp0/jZoo9JZpVkLdguvEI8C/iEZ2QZNAe8u5J/YCspgMr+IZWPbhsvNzzuCPLW0IqC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="638e51dbffe6cf5cf00694fed66bdb64dc561a24fe683e33fa6b197f8b702dca" Description="" Url=""><as:assemblyIdentity name="Block Source Launcher.exe" version="1.0.0.1" publicKeyToken="e4e3e106a4bbdfe6" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN={8786CC0F-B53D-48E2-9388-C00CB0E8D486}</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>1AMF38zFwBH0FbWPEz7ePqSW22jzGZ6Y0FfxfPvhqQY=</DigestValue></Reference></SignedInfo><SignatureValue>wD4dBV54Do98FhjCfagPvr3RTPzotWzm+kiDn5zTVZGRO3fmGqj/ysATj7r+ZY6ted5M/vERPvrTi5Ih/DRlKPe3ub0I8gypweVgn934CgjiBzIaZeLwPJKTD4FgmN4nROKIZth5PidaJXsdDnrXkGOr+RirCtKdjPk5MefLX34=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>4wpCu+bQk6WDFcF4B2+TYbjYToW+bqckKfhdMu1WsEbzM9Hi5JxJcq1lOJALoRCHX0x8sgqcFfTjj3HcEwl12uqgoCAFh5vZMxISlit5xp0/jZoo9JZpVkLdguvEI8C/iEZ2QZNAe8u5J/YCspgMr+IZWPbhsvNzzuCPLW0IqC0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIICMTCCAZqgAwIBAgIQGqybAOEKE75GJCaB8FPHHTANBgkqhkiG9w0BAQsFADBXMVUwUwYDVQQDHkwAewA4ADcAOAA2AEMAQwAwAEYALQBCADUAMwBEAC0ANAA4AEUAMgAtADkAMwA4ADgALQBDADAAMABDAEIAMABFADgARAA0ADgANgB9MB4XDTIyMTAwOTE3MTc1NVoXDTIzMTAwOTIzMTc1NVowVzFVMFMGA1UEAx5MAHsAOAA3ADgANgBDAEMAMABGAC0AQgA1ADMARAAtADQAOABFADIALQA5ADMAOAA4AC0AQwAwADAAQwBCADAARQA4AEQANAA4ADYAfTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEA4wpCu+bQk6WDFcF4B2+TYbjYToW+bqckKfhdMu1WsEbzM9Hi5JxJcq1lOJALoRCHX0x8sgqcFfTjj3HcEwl12uqgoCAFh5vZMxISlit5xp0/jZoo9JZpVkLdguvEI8C/iEZ2QZNAe8u5J/YCspgMr+IZWPbhsvNzzuCPLW0IqC0CAwEAATANBgkqhkiG9w0BAQsFAAOBgQCY/xhim3aZjUw4GGvNNXAvlG7R91vKUrs6T9K3v/u1wG7lFwUzGpHWBDG5nYfldWVwy9HNQEbAGP5RuYPIAh/Bh3KoVWuLbXtBriGRbmPTISdm3t3RzHBsZj8Q4cNciGXzii2XwEfdQqSEGlHwoxh4muLm1W7JDgOjIqzIRU4Whg==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
